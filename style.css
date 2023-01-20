@@ -1,0 +1,148 @@
+#topSide{
+    text-align: center;
+    float:center;
+    min-width: 320px;
+    margin-top: 5rem;
+    display: flexbox;
+  }
+  h1{
+    font-size: 3rem;
+    color:white;
+    text-shadow: 2.4px 1.3px rgba(96, 93, 93, 0.516);
+    text-shadow: 1.5px 4px rgba(96, 93, 93, 0.516);
+  }
+  p{
+    font-size: 1.5rem;
+    color:white;
+  }
+  
+  a{
+    font-size: 1.5rem;
+    color:white;
+  }
+  
+  #mainSide{
+    border:5px solid transparent;
+    padding:30px;
+    min-width: 320px;
+    display:flex;
+    text-align:left;
+    place-content: center;
+    float:center;
+    scroll-snap-type: x proximity;
+    display: flexbox;
+    height: auto;
+  }
+  #bottomSide{
+    text-align: center;
+    float:center;
+  }
+  
+  body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-repeat: no-repeat;
+    background-position: center;
+    background: rgb(80,85,111);
+    background: radial-gradient(circle, rgba(80,85,111,1) 0%, rgba(0,0,0,1) 100%);        background-attachment: fixed;
+    margin:0;
+    overflow:scroll;
+  } 
+  
+  
+
+
+
+
+
+
+
+
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    color:white;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(92, 92, 92, 0.541);
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 10px;
+  }
+  .dropdown-content a{
+    text-decoration: none;
+ }
+ .dropdown-content p{
+    text-decoration: none;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    background-color: transparent;
+    border-radius: 10px;
+    padding: 1%;
+    min-width: 100px;
+
+ }
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  .dropdown-content p:hover{
+    transition: 0.4s;
+    box-shadow: 0px 8px 16px 0px rgba(236, 236, 236, 0.479);
+  }
+
+  
+
+
+label{
+    font-size: 1.5rem;
+    color:white;
+}
+
+
+
+/*The example above applies to all <input> elements. If you only want to style a specific input type, you can use attribute selectors:
+
+input[type=text] - will only select text fields
+input[type=password] - will only select password fields
+input[type=number] - will only select number fields*/
+
+
+  input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  input[type=submit] {
+    width: 100%;
+    background-color: transparent;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: transparent;
+  }
+  
+  div {
+    border-radius: 5px;
+    background-color: transparent;
+    padding: 20px;
+  }
+  
+  
+  
+  
+  
+  
+  
