@@ -8,12 +8,14 @@
     <link rel="stylesheet" href="style.css">
     <script type="text/javascript" src="script.js"></script>
 </head>
-<body onload="">
+<body onload="sendApiGetReq()">
+  
 <section id="top">
       <div id="topSide">
         <h1 id="h1">No head</h1>
     </div>
 </section>
+
 <section id="mid">
     <div id="mainSide">
         <div class="dropdown">
@@ -28,7 +30,7 @@
           <div>
             <form>
                 <label for="FoodType">Food type</label>
-                <select id="foodType" name="country">
+                <select id="foodType" name="country" onclick="updateValues();">
                   <option>chicken breast</option>
                   <option>chocolate</option>
                   <option>broccolli</option>
@@ -44,10 +46,15 @@
           </div>
           
     </div>
+    
 </section>
 <section id="bot">
     <div id="bottomSide">
-          
+      <p id="City">No Data</p>
+      <p id="Temperature">No Data</p>
+      <p id="Description">No Data</p>
+      <p id="Country">No Data</p>
+
     </div>
 </section>
 </body>
