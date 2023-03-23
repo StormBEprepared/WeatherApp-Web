@@ -44,15 +44,17 @@ function sendApiGetReq(){
     redirect: 'follow'
   };
   
+  const city = document.getElementById("InputCity").value;
 
-  fetch("https://api.openweathermap.org/data/2.5/weather?q=Bacau&appid=30ad8b12cff1d96e78b93a835665538e", requestOptions)
+  fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=30ad8b12cff1d96e78b93a835665538e`, requestOptions)
     .then(response => response.json())
     .then(json => {
       document.getElementById("Temperature").innerHTML=`Temperature: ${parseInt(json.main.temp)-272}<span>°C</span>`;//-272 as the json.main.temp is in kelvin
       document.getElementById("City").innerHTML=`City: ${json.name}.`;
-    
-    
-    
+      document.getElementById("Main").innerHTML=`State: ${json.weather[0].main}.`;
+      document.getElementById("Description").innerHTML=`Details: ${json.weather[0].description}.`;
+      document.getElementById("Country").innerHTML=`Country: ${json.sys.country}.`;
+
     
     } )
     .catch(error => console.log('error', error));

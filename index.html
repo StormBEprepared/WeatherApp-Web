@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <script type="text/javascript" src="script.js"></script>
 </head>
-<body onload="sendApiGetReq()">
+<body onload="">
   
 <section id="top">
       <div id="topSide">
@@ -50,10 +50,23 @@
 </section>
 <section id="bot">
     <div id="bottomSide">
+      <input type="text" 
+      id="InputCity" 
+      placeholder="Write your city here.." 
+      style="max-width: 50%;">
+
+
+      <button type="submit" 
+      id="checkWeatherForCity" 
+      onclick="sendApiGetReq()" 
+      style="display: block; margin-left: 50%;">Check!</button>
+
+
       <p id="City">No Data</p>
-      <p id="Temperature">No Data</p>
-      <p id="Description">No Data</p>
       <p id="Country">No Data</p>
+      <p id="Temperature">No Data</p>
+      <p id="Main">No Data</p>
+      <p id="Description">No Data</p>
 
     </div>
 </section>
