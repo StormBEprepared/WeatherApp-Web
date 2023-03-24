@@ -37,7 +37,8 @@
     background-repeat: no-repeat;
     background-position: center;
     background: rgb(80,85,111);
-    background: radial-gradient(circle, rgba(80,85,111,1) 0%, rgba(0,0,0,1) 100%);        background-attachment: fixed;
+    background-image: radial-gradient(circle, #13015b, #130c66, #121770, #10217b, #0c2a86, #00368c, #004292, #004d96, #005a91, #006284, #006875, #376c69);
+    background-attachment: fixed;
     margin:0;
     overflow:scroll;
     align-items: center;

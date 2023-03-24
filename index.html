@@ -7,35 +7,39 @@
 
     <link rel="stylesheet" href="style.css">
     <script type="text/javascript" src="script.js"></script>
+
 </head>
 <body onload="">
   
 <section id="top">
       <div id="topSide">
         <h1 id="h1">🌞 Weather App 🌞</h1>
+
+        <div class="weather-box">
+          <img src="">
+        </div>
+        <p id="City"></p>
+        <p id="Country"></p>
+        <p id="Temperature"></p>
+        <p id="Main"></p>
+        <p id="Description"></p>
+  
+        <input type="text" 
+        id="InputCity" 
+        placeholder="Write your city here.." 
+        style="Width: 20%; "
+        onclick="EnterEventHandler()">
+  
+        <p></p><!--Added only for the button underneath to be centered-->
+        <button class="button-weather" role="button" id="checkWeatherForCity" 
+        onclick="sendApiGetReq()">Check Weather</button>
     </div>
 </section>
 <!--https://openweathermap.org/current-->
 <section id="mid">
     <div id="mainSide">
        
-      <div class="weather-box">
-        <img src="">
-      </div>
-      <p id="City"></p>
-      <p id="Country"></p>
-      <p id="Temperature"></p>
-      <p id="Main"></p>
-      <p id="Description"></p>
-
-      <input type="text" 
-      id="InputCity" 
-      placeholder="Write your city here.." 
-      style="Width: 20%; ">
-
-      <p></p><!--Added only for the button underneath to be centered-->
-      <button class="button-weather" role="button" id="checkWeatherForCity" 
-      onclick="sendApiGetReq()">Check Weather</button>
+      
     </div>
     
 </section>
