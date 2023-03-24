@@ -12,62 +12,36 @@
   
 <section id="top">
       <div id="topSide">
-        <h1 id="h1">No head</h1>
+        <h1 id="h1">🌞 Weather App 🌞</h1>
     </div>
 </section>
 <!--https://openweathermap.org/current-->
 <section id="mid">
     <div id="mainSide">
-        <div class="dropdown">
-            <span>Mouse over me</span>
-            <div class="dropdown-content">
-            <p><a href="www.google.com">Option1</a></p>
-            <p><a href="www.google.com">Option2</a></p>
-            <p><a href="www.google.com">Option3</a></p>
-            </div>
-          </div>
+       
+      <div class="weather-box">
+        <img src="">
+      </div>
+      <p id="City"></p>
+      <p id="Country"></p>
+      <p id="Temperature"></p>
+      <p id="Main"></p>
+      <p id="Description"></p>
 
-          <div>
-            <form>
-                <label for="FoodType">Food type</label>
-                <select id="foodType" name="country" onclick="updateValues();">
-                  <option>chicken breast</option>
-                  <option>chocolate</option>
-                  <option>broccolli</option>
-                </select>
-  
-              <label for="kcal">Kcal/100g</label>
-              <input type="text" id="kcal" name="Kcal" placeholder="kcal">
-          
-              <label for="protein">Protein</label>
-              <input type="text" id="protein" name="Protein" placeholder="protein">            
-              <input type="submit" value="Submit" onclick="get_action();">
-            </form>
-          </div>
-          
+      <input type="text" 
+      id="InputCity" 
+      placeholder="Write your city here.." 
+      style="Width: 20%; ">
+
+      <p></p><!--Added only for the button underneath to be centered-->
+      <button class="button-weather" role="button" id="checkWeatherForCity" 
+      onclick="sendApiGetReq()">Check Weather</button>
     </div>
     
 </section>
 <section id="bot">
     <div id="bottomSide">
-      <input type="text" 
-      id="InputCity" 
-      placeholder="Write your city here.." 
-      style="max-width: 50%;">
-
-
-      <button type="submit" 
-      id="checkWeatherForCity" 
-      onclick="sendApiGetReq()" 
-      style="display: block; margin-left: 50%;">Check!</button>
-
-
-      <p id="City">No Data</p>
-      <p id="Country">No Data</p>
-      <p id="Temperature">No Data</p>
-      <p id="Main">No Data</p>
-      <p id="Description">No Data</p>
-
+      
     </div>
 </section>
 </body>

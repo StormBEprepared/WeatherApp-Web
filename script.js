@@ -55,10 +55,29 @@ function sendApiGetReq(){
       document.getElementById("Description").innerHTML=`Details: ${json.weather[0].description}.`;
       document.getElementById("Country").innerHTML=`Country: ${json.sys.country}.`;
 
+      const image = document.querySelector('.weather-box img');
+      switch(json.weather[0].main){
+        case 'Clear':
+          image.src = 'images/clear.png';
+          break;
+        case 'Rain':
+          image.src = 'images/rain.png';
+          break;
+        case 'Snow':
+          image.src = 'images/snow.png';
+          break;
+        case 'Clouds':
+          image.src = 'images/cloud.png';
+          break;
+        case 'Haze':
+          image.src = 'images/mist.png';
+          break;
+        default:
+          image.src = '';
+      }
     
     } )
     .catch(error => console.log('error', error));
-    
     
 
 }
