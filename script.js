@@ -18,7 +18,7 @@ function sendApiGetReq(){
   
   const city = document.getElementById("InputCity").value;
 
-  fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=30ad8b12cff1d96e78b93a835665538e`, requestOptions)
+  fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid={YOUR KEY HERE}`, requestOptions)
     .then(response => response.json())
     .then(json => {
 
@@ -57,18 +57,10 @@ function sendApiGetReq(){
         default:
           image.src = '';
       }
-    
       
     } )
     .catch(error => console.log('error', error));
     
     document.getElementById("InputCity").value=null;
-    
-    
-
-    
 
 }
-
-
-
